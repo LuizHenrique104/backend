@@ -64,7 +64,7 @@ app.post('/purchases', async (request, reply) => {
       }
       cacheStore.insert('purchases', cachePayload)
     } catch (err) {
-      request.log.error('Falha ao persistir purchase em arquivo')
+      request.log.error('Falhas ao persistir purchase em arquivo')
       return reply.code(500).send({ error: 'Erro ao persistir compra' })
     }
 
