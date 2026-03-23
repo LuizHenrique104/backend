@@ -1,0 +1,28 @@
+{
+  "name": "clean-cache-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --no-cache --watchAll",
+    "build": "tsc -p tsconfig.json",
+    "start:dist": "node src/main/server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.21.0",
+    "@fastify/cors": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/faker": "^6.6.8",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.3.3",
+    "faker": "^5.5.3",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  }
+}
